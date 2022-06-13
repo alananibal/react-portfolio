@@ -23,11 +23,11 @@ function App() {
 
 
   return (
-    <div>
+    <div class="d-flex flex-column min-vh-100">
       <Header><Nav currentPage={currentPage} handlePageChange={handlePageChange} /></Header>
      
       {renderPage()}
-      <Footer></Footer>
+      <Footer ></Footer>
     </div>
   );
 }

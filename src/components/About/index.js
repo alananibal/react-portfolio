@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../../assets/images/atTheStage.jpg';
+import profileImage from '../../assets/images/profileimage.jpg';
 
 
 function About() {
@@ -10,7 +10,7 @@ function About() {
       <div class="card mb-3 ">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src={profileImage} class="card-img" alt="cover"/>
+      <img src={profileImage} class="card-img mh-100px" alt="cover"/>
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -23,6 +23,7 @@ function About() {
           dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
           Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        
       </div>
     </div>
   </div>
