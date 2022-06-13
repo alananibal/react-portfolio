@@ -23,7 +23,7 @@ function About() {
           dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
           Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        
+        <h4><a href="https://github.com/alananibal">GitHub</a></h4>
       </div>
     </div>
   </div>
