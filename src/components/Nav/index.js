@@ -3,8 +3,8 @@ import React from "react";
 
 function Nav({ currentPage, handlePageChange }) {
     return (
-        <nav>
-            <ul>
+        <nav class="border border-primary">
+            <ul  class="nav">
                 <li>
                 <a href="#about"
                 onClick={() => handlePageChange('About')}
