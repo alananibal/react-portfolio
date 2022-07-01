@@ -37,7 +37,7 @@ function ContactForm() {
   };
 
   return (
-    <section>
+    <section class="vh-100">
       {/* !--Section: Contact v.2--> */}
       <section id="contact-form" onSubmit={handleSubmit} class="mb-4">
         {/* <!--Section heading--> */}
