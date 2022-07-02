@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/react-portfolio/static/js/main.d47af6e6.js",
+    "static/js/787.7ba387c1.chunk.js": "/react-portfolio/static/js/787.7ba387c1.chunk.js",
+    "static/media/PopcornFetcher.gif": "/react-portfolio/static/media/PopcornFetcher.86072f0037495ff8c046.gif",
+    "static/media/TheTechBlog.gif": "/react-portfolio/static/media/TheTechBlog.0c82656906a72981793b.gif",
+    "static/media/PasswordGenerator.gif": "/react-portfolio/static/media/PasswordGenerator.b06d4a7f8340a98dad30.gif",
+    "static/media/profileimage.jpg": "/react-portfolio/static/media/profileimage.d5dcdc5d311556c364c3.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.e6c13ad2.css.map": "/react-portfolio/static/css/main.e6c13ad2.css.map",
+    "main.d47af6e6.js.map": "/react-portfolio/static/js/main.d47af6e6.js.map",
+    "787.7ba387c1.chunk.js.map": "/react-portfolio/static/js/787.7ba387c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d47af6e6.js"
+  ]
+}
