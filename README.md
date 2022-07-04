@@ -37,5 +37,5 @@ Screen Readers for Viewing Content
 -VoiceOver (latest version) 
 -TalkBack (latest version)
 
-####Credits
+### Credits
     Alan Anibal De Souza Ramos
