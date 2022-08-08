@@ -1,35 +1,47 @@
-import React, { useState } from 'react';
-import About from './components/About';
-import ContactForm from './components/Contact';
-import Nav from './components/Nav';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Project from './components/Project';
+/** @format */
+
+import React, { useState, useEffect } from 'react'
+import './App.css'
+import Footer from './components/Footer'
+import ProjectBtn from './components/ProjectBtn'
+import Skills from './components/Skills'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Loader from './components/Loader'
+import Header from './components/Header'
+import Info from './components/Info'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [loading, setLoading] = useState(true)
 
-  const renderPage = () => {
-    if (currentPage === 'About') {
-      return <About />;
-    }
-    if (currentPage === 'Contact') {
-      return <ContactForm />;
-    }
-    return <Project />;
-  };
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
 
-  const handlePageChange = (page) => setCurrentPage(page);
-
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
 
   return (
-    <div class="d-flex flex-column min-vh-100">
-      <Header><Nav currentPage={currentPage} handlePageChange={handlePageChange} /></Header>
-     
-      {renderPage()}
-      <Footer/>
-    </div>
-  );
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className='container app_container'>
+          <div className='main'>
+            <Header />
+            <Info />
+            <Skills />
+          </div>
+          <ProjectBtn />
+          <Footer />
+        </div>
+      )}
+    </>
+  )
 }
 
-export default App;
+export default App
