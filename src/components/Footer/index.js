@@ -1,13 +1,16 @@
-import React from 'react';
+/** @format */
 
-function Footer() {
+import React from 'react'
+import './style.css'
+// import EmailBtn from '../EmailBtn'
 
-    return(
-        <footer class='mb-0' >
-            <h4 class="text-white bg-primary px-4 py-2 text-right">
-                build by Alan Anibal 2022</h4>
-            </footer>
-    )
+const getYear = () => new Date().getFullYear()
+
+export default function Footer() {
+  return (
+    <div className='footer'>
+      <p>© {getYear()} Alan Anibal</p>
+      {/* <EmailBtn /> */}
+    </div>
+  )
 }
-
-export default Footer

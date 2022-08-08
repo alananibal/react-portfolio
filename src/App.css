@@ -1,38 +1,119 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Jura', sans-serif !important;
+}
+
+body {
+  background-image: linear-gradient(to top, #fff1eb 0%, #5f1212 100%);
+  /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+}
+
+.app_container {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 150vh;
+  font-family: 'Jura', sans-serif !important;
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+  margin-top: 4em;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 25%;
+  margin-bottom: 32px;
+  object-fit: contain;
+}
+
+.name {
+  font-size: 2.5em;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  margin: auto 0;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.title {
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.summary {
+  letter-spacing: 1.5px;
+  font-size: 1em;
+
+  margin: 0;
+}
+
+.summary-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 200%;
+}
+.mainsummary-container {
+  margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.project-header {
+  margin-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projects {
+  font-size: 2.5em;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  color: rgb(31, 107, 247);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon-row {
+  font-size: 17px;
+  margin: auto;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  border-radius: 65px;
+  box-shadow: 0 0 15px lightgrey;
+  padding: 11px 15px;
+  background-color: #eee;
+  transition: 0.5s;
+  color: grey;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.icon:hover {
+  color: #ddd;
+  background-color: cornflowerblue;
+  box-shadow: 0 0px 2px 4px cornflowerblue;
+}
+
+.message {
+  margin-left: 15px;
+  color: cornflowerblue;
 }
